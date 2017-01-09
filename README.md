@@ -1,4 +1,4 @@
 # images-retrieving
 
 ## SIFT
-from image 
+find the images 
