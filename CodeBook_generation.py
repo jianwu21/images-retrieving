@@ -1,7 +1,10 @@
+from numpy import *
 import cv2
+import os
 from scipy.cluster.vq import *
 
-class Vocabuary(object):
+
+class Vocabulary(object):
     def __init__(self,name):
         self.name = name
         self.voc = []
