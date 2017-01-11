@@ -1,5 +1,7 @@
 import pickle
 from sqlite3 import dbapi2 as sqlite
+from get_data_set import train,test
+from numpy import *
 
 class Searcher(object):
     def __init__(self,db,voc):
@@ -18,7 +20,7 @@ class Searcher(object):
             "select distinct imid from imwords where wordid = %d" %imword
         ).fetchall()
 
-        return [i[0] for i in im_ids if i[0] in range(132)]
+        return [i[0] for i in im_ids if i[0] in range(len(train)+1)]
 
     def candidates_from_imhistogram(self,imwords):
         # get a list of images with similar words

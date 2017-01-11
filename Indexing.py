@@ -2,6 +2,7 @@ import pickle
 from sqlite3 import dbapi2 as sqlite
 
 class Indexer(object):
+    
     def __init__(self,db,voc):
         self.con = sqlite.connect(db)
         self.voc = voc
@@ -66,3 +67,4 @@ class Indexer(object):
             return cur.lastrowid
         else:
             return res[0]
+

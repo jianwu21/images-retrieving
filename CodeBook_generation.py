@@ -45,7 +45,7 @@ class Vocabulary(object):
 
         imwords = zeros((self.nbr_image,self.nbr_words))
         for i in range(self.nbr_image):
-            imwords[i] = self.project(features[i])
+            imwords[i] = self.project(self.features[i])
 
         return imwords
 
