@@ -1,6 +1,6 @@
 # images-retrieving
 
-just run "python retrieve.py" to find the similar pictures
+just run `python retrieve.py` to find the similar pictures
 
 ## .db file
 
